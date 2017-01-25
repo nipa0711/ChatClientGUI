@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 using System.IO;
-using System.Net;
 using System.Net.Sockets;
+using System.Text;
 using System.Threading;
+using System.Windows;
 
 namespace ClientGUI
 {
@@ -72,7 +68,7 @@ namespace ClientGUI
 
         private void Window_Initialized(object sender, System.EventArgs e)
         {
-            
+
         }
 
         public void listening()
@@ -91,7 +87,6 @@ namespace ClientGUI
             {
                 disconnect();
             }
-
         }
 
         public void UpdateChatBox(string data)
@@ -115,10 +110,8 @@ namespace ClientGUI
             try
             {
                 string msg = msgBox.Text;
-                SW.WriteLine(msg); // 메시지 보내기
+                SW.WriteLine(idBox.Text + "님 : " + msg); // 메시지 보내기
                 SW.Flush();
-
-                UpdateChatBox("나 : " + msg);
                 msgBox.Text = "";
             }
             catch (Exception A)
@@ -150,6 +143,8 @@ namespace ClientGUI
                 SR.Close();
             if (client != null)
                 client.Close();
+            if (NS != null)
+                NS.Close();
         }
     }
 }

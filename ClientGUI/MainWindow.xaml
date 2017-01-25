@@ -11,7 +11,7 @@
         <TextBox x:Name="ipBox" HorizontalAlignment="Left" Height="23" Margin="35,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" Text="localhost"/>
         <Button x:Name="btnConnect" Content="접속" HorizontalAlignment="Left" Margin="280,45,0,0" VerticalAlignment="Top" Width="77" Height="23" Click="btnConnect_Click"/>
         <Label x:Name="label1" Content="Port" HorizontalAlignment="Left" Margin="265,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="portBox" HorizontalAlignment="Left" Height="22" Margin="302,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" Text="4444"/>
+        <TextBox x:Name="portBox" HorizontalAlignment="Left" Height="22" Margin="302,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" Text="44444"/>
         <TextBox x:Name="chatBox" HorizontalAlignment="Left" Height="176" Margin="10,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="347"/>
         <TextBox x:Name="msgBox" HorizontalAlignment="Left" Height="23" Margin="10,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="256"/>
         <Button x:Name="btnSend" Content="전송" HorizontalAlignment="Left" Margin="271,264,0,0" VerticalAlignment="Top" Width="86" Height="23" Click="btnSend_Click"/>
